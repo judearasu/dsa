@@ -1,0 +1,23 @@
+{
+  "name": "dsa",
+  "version": "1.0.0",
+  "description": "Data Structures &amp; Algorithms in JavaScript | Node.js",
+  "main": "karma.conf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/judearasu/dsa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/judearasu/dsa/issues"
+  },
+  "homepage": "https://github.com/judearasu/dsa#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
+}
