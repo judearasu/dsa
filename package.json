@@ -18,6 +18,7 @@
   "homepage": "https://github.com/judearasu/dsa#readme",
   "devDependencies": {
     "chai": "^3.5.0",
+    "karma": "^0.13.22",
     "mocha": "^2.4.5"
   }
 }
