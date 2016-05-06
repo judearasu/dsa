@@ -1,4 +1,4 @@
-describe.only('flatten function', function() {
+describe('flatten function', function() {
   it('should be defined', function() {
     expect(flatten).to.be.a('function');
   });
