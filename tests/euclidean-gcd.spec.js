@@ -1,4 +1,4 @@
-describe.only('euclideangcd function', function(){
+describe('euclideangcd function', function(){
   it('should be defined', function(){
     expect(euclidean_gcd).to.be.a('function');
   })
