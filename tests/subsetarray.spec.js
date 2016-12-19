@@ -1,4 +1,4 @@
-describe.only('Print All k size subset of given array of size n', function() {
+describe('Print All k size subset of given array of size n', function() {
   it('should be defined', function(){
     expect(subsetArray).to.be.defined;
   });
