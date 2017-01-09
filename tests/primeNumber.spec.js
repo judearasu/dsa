@@ -1,4 +1,4 @@
-describe.only('PrimeNumber function', function() {
+describe('PrimeNumber function', function() {
   it('should be defined', function() {
     expect(primeNumber).to.be.instanceOf(Object);
   });
