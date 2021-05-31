@@ -1,0 +1,39 @@
+yarn add v1.22.5
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+info fsevents@2.3.2: The platform "linux" is incompatible with this module.
+info "fsevents@2.3.2" is an optional dependency and failed compatibility check. Excluding it from installation.
+[3/4] Linking dependencies...
+[4/4] Building fresh packages...
+success Saved lockfile.
+success Saved 23 new dependencies.
+info Direct dependencies
+├─ @typescript-eslint/eslint-plugin@4.25.0
+├─ @typescript-eslint/parser@4.25.0
+├─ eslint-config-google@0.14.0
+└─ eslint@7.27.0
+info All dependencies
+├─ @nodelib/fs.scandir@2.1.4
+├─ @nodelib/fs.stat@2.0.4
+├─ @nodelib/fs.walk@1.2.6
+├─ @types/json-schema@7.0.7
+├─ @typescript-eslint/eslint-plugin@4.25.0
+├─ @typescript-eslint/experimental-utils@4.25.0
+├─ @typescript-eslint/parser@4.25.0
+├─ array-union@2.1.0
+├─ dir-glob@3.0.1
+├─ eslint-config-google@0.14.0
+├─ eslint-scope@5.1.1
+├─ eslint-utils@2.1.0
+├─ eslint@7.27.0
+├─ fast-glob@3.2.5
+├─ fastq@1.11.0
+├─ glob-parent@5.1.2
+├─ globby@11.0.3
+├─ path-type@4.0.0
+├─ queue-microtask@1.2.3
+├─ regexpp@3.1.0
+├─ reusify@1.0.4
+├─ run-parallel@1.2.0
+└─ tslib@1.14.1
+Done in 6.29s.
