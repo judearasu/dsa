@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1622945863331" clover="3.2.0">
-  <project timestamp="1622945863332" name="All files">
-    <metrics statements="33" coveredstatements="31" conditionals="10" coveredconditionals="8" methods="6" coveredmethods="6" elements="49" coveredelements="45" complexity="0" loc="33" ncloc="33" packages="2" files="5" classes="5"/>
+<coverage generated="1624114721987" clover="3.2.0">
+  <project timestamp="1624114721987" name="All files">
+    <metrics statements="54" coveredstatements="52" conditionals="16" coveredconditionals="14" methods="9" coveredmethods="9" elements="79" coveredelements="75" complexity="0" loc="54" ncloc="54" packages="2" files="8" classes="8"/>
     <package name="dsa">
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
       <file name="check.js" path="/home/thillainarayanan/Mywork/hacker/dsa/check.js">
@@ -16,7 +16,25 @@
       </file>
     </package>
     <package name="dsa.leetcode.problems">
-      <metrics statements="29" coveredstatements="27" conditionals="10" coveredconditionals="8" methods="3" coveredmethods="3"/>
+      <metrics statements="50" coveredstatements="48" conditionals="16" coveredconditionals="14" methods="6" coveredmethods="6"/>
+      <file name="kPositiveNumber.js" path="/home/thillainarayanan/Mywork/hacker/dsa/leetcode/problems/kPositiveNumber.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="largestUniqueNumber.js" path="/home/thillainarayanan/Mywork/hacker/dsa/leetcode/problems/largestUniqueNumber.js">
+        <metrics statements="12" coveredstatements="12" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="14" count="9" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="18" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="19" count="5" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+      </file>
       <file name="removeDup.js" path="/home/thillainarayanan/Mywork/hacker/dsa/leetcode/problems/removeDup.js">
         <metrics statements="10" coveredstatements="9" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
         <line num="6" count="1" type="stmt"/>
@@ -42,6 +60,18 @@
         <line num="20" count="2" type="stmt"/>
         <line num="21" count="2" type="stmt"/>
         <line num="24" count="1" type="stmt"/>
+      </file>
+      <file name="searchInsPos.js" path="/home/thillainarayanan/Mywork/hacker/dsa/leetcode/problems/searchInsPos.js">
+        <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="8" count="5" type="stmt"/>
+        <line num="9" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="11" count="19" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="14" count="5" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
       </file>
       <file name="twoSum.js" path="/home/thillainarayanan/Mywork/hacker/dsa/leetcode/problems/twoSum.js">
         <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
