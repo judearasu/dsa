@@ -11,3 +11,4 @@ test('Check the given string is palindrome', () =>{
 test('Check the given string is palindrome', () =>{
     expect(palindrome('abvd')).toBe(false);
 })
+

@@ -11,3 +11,7 @@ test('Reverse a string',() =>{
 test('Reverse a string', () =>{
     expect(reverse('xyz')).toBe('zyx');
 })
+
+test('Reverse a string', () =>{
+    expect(reverse('123')).toBe('321');
+})
