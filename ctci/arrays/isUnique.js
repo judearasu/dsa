@@ -3,17 +3,20 @@
  * Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures?
  */
 function isUnique(str) {
-    let strArr = str.split('');
+    if(str.length > 128){
+        return false;
+    }
     let strMap = {};
-    for (let i = 0; i < strArr.length; i++) {
-        if (strArr[i] in strMap) {
-            strMap[strArr[i]] = strMap[strArr[i]] + 1;
+    for (let i = 0; i < str.length; i++) {
+        let val = str.charAt(i);
+        if (val in strMap) {
+            strMap[val] = strMap[val] + 1;
             return false;
         } else {
-            strMap[strArr[i]] = 1;
+            strMap[val] = 1;
         }
     }
     return true;
 }
-console.log(isUnique(str = 'Thillai'));
+console.log(isUnique(str = 'Than'));
 module.exports = isUnique;
