@@ -6,4 +6,4 @@ Solutions to problems from Code Signal
 
 You are given a two-digit integer n. Return the sum of its digits.
 
-[Solution] (core\addTwoDigits.js)
+[Solution] (./core/addTwoDigits.js)
