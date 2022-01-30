@@ -6,16 +6,21 @@
 var lengthOfLongestSubstring = function (s) {
     const charSet = new Set();
     let left = 0;
-    let res = 0;
-    for (let right = 0; right < s.length; right++) {
-        while (charSet.has(s[right])) {
-            charSet.delete(s[left])
-            left += 1;
+    let right = 0;
+    let max = 0;
+    while (right < s.length) {
+        if (!charSet.has(s.charAt(right))) {
+            charSet.add(s.charAt(right));
+            right++;
+            console.log('right', right);
+            max = Math.max(charSet.size, max);
+        } else {
+            charSet.delete(s.charAt(left))
+            left++;
+            console.log('left', left);
         }
-        charSet.add(s[right]);
-        res = Math.max(res, right - left + 1);
     }
-    return res;
+    return max;
 };
 
-console.log(lengthOfLongestSubstring('pwwkew'));
+console.log(lengthOfLongestSubstring('clementisacap'));
