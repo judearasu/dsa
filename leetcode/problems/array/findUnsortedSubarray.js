@@ -41,4 +41,4 @@ var findUnsortedSubarray = function (nums) {
     return end - start + 1;
 };
 
-console.log(findUnsortedSubarray(nums = [2, 3, 3, 2, 4]))
+console.log(findUnsortedSubarray(nums = [2, 6, 4, 8, 10, 9, 15]))
