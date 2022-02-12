@@ -9,8 +9,6 @@ const endorsements = [
 ];
 const skills = group(endorsements);
 
-console.log(skills);
-
 // Output is an array of users grouped by skill and their count in descending order.
 // console.log(endorsements);
 // [
@@ -39,7 +37,7 @@ let x = endorsements.reduce((acc, { skill, user }) => {
     return acc;
 }, {});
 
-// console.log(Object.values(x));
+console.log(Object.values(x));
 
 function group(endorsements) {
     let outPut = [];
