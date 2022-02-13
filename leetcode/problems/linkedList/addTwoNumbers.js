@@ -11,6 +11,34 @@ function ListNode(val, next) {
     this.val = (val === undefined ? 0 : val)
     this.next = (next === undefined ? null : next)
 }
+
+function LinkedList() {
+    this._length = 0;
+    this._head = null;
+}
+
+LinkedList.prototype.push = function (data) {
+    // Create a new node with Data
+    var node = new ListNode(data);
+
+    // We are inserting the first node in the list
+    if (this._head === null) {
+        this._head = node;
+    } else {
+        // Find the last node
+        var current = this._head;
+
+        while (current.next) {
+            current = current.next;
+        }
+
+        current.next = node;
+    }
+
+    // Increment the length
+    this._length++;
+}
+
 var addTwoNumbers = function (l1, l2) {
     let list = new ListNode(0);
     let currentNode = list;
@@ -41,5 +69,3 @@ var addTwoNumbers = function (l1, l2) {
 
     return list.next;
 };
-
-console.log(addTwoNumbers(l1 = [2, 4, 3], l2 = [5, 6, 4]))
