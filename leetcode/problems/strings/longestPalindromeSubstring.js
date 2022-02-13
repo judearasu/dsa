@@ -3,6 +3,7 @@
  * @param {string} s
  * @return {string}
  */
+// Brute Force
 var longestPalindrome = function (s) {
     let newStr = '';
     let left = 0;
@@ -45,4 +46,33 @@ var checkPalindrome = function (str) {
     }
     return true;
 }
-console.log(longestPalindrome('babad'))
+// console.log(longestPalindrome('babad'))
+var longestPalindrome2 = function (str) {
+    let strLength = str.length;
+    let longest = '';
+
+    if (strLength < 2) {
+        return s;
+    }
+
+    for (let start = 0; start < strLength - 1; start++) {
+        let len1 = expandAroundCenter(str, start, start);
+        let len2 = expandAroundCenter(str, start, start + 1);
+        let longerPalindrome = len1.length > len2.length ? len1 : len2;
+        if (longerPalindrome.length > longest.length) {
+            longest = longerPalindrome;
+        }
+    }
+
+    return longest;
+}
+
+
+var expandAroundCenter = function (str, begin, end) {
+    while (begin >= 0 && end < str.length && str[begin] === str[end]) {
+        begin--;
+        end++;
+    }
+    return str.slice(begin + 1, end);
+}
+console.log(longestPalindrome2('cbbd'))
