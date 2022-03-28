@@ -8,4 +8,4 @@ Ace the Coding Interview
 | -------- | --------------- | ------------- |
 | Cassidoo | Contained Items | [compWall.js] |
 
-[containeditems]: https://github.com/judearasu/dsa/blob/develop/cassidoo/compWall.js
+[compwall.js]: https://github.com/judearasu/dsa/blob/develop/cassidoo/compWall.js
