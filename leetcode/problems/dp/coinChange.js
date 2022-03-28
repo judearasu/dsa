@@ -4,16 +4,18 @@
  */
 
 var coinChange = function (coins, amount) {
-    if (amount === 0) {
-        return 0;
-    }
-    let result = Number.MAX_SAFE_INTEGER;
+    const combinations = new Array(amount + 1).fill(Infinity);
+    combinations[0] = 0;
     for (let coin of coins) {
-        if (coin <= amount) {
-            result = Math.min(result, coinChange(coins, amount - coin) + 1);
+        for (let start = 1; start < combinations.length; start++) {
+            if (coin <= start) {
+                let idx = start - coin;
+                let potAmt = combinations[idx] + 1;
+                combinations[start] = Math.min(potAmt, combinations[start])
+            }
         }
     }
-    return result;
+    return combinations[combinations.length - 1] === Infinity ? -1 : combinations[combinations.length - 1];
 };
 coins = [1, 2, 5], amount = 11
 console.log(coinChange(coins, amount));
